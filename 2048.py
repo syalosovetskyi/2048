@@ -249,6 +249,8 @@ def game(a):
                 b = process_game(a.reshape((4,4)), d)
                 a = b.reshape(16) 
             #print(b)
+        else:
+            print('you win')
 
 def testing(a):
     pass

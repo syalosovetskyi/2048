@@ -139,13 +139,13 @@ def switch_dict(x):
     #print('switch_dict(x):')
     #print('x=', x, type(x))
     #print('x=',x[0])
-    if x[0]==112: d=-2 #pickle and exit
-    if x[0]==117: d=6 #unpickle and continue
-    if x[0]==119 or x[0]==72: d = 1
-    if x[0]==100 or x[0]==77: d = 2
-    if x[0]==115 or x[0]==80: d = 3 
-    if x[0]==97 or x[0]==75: d = 4
-    if x[0]==113: d = -1
+    if x[0]==112 or x[0]=='p': d=-2 #pickle and exit
+    if x[0]==117 or x[0]=='u': d=6 #unpickle and continue
+    if x[0]==119 or x[0]==72  or x[0]=='w' or x[0]=='A': d = 1
+    if x[0]==100 or x[0]==77 or x[0]=='d' or x[0]=='C': d = 2
+    if x[0]==115 or x[0]==80 or x[0]=='s' or x[0]=='B': d = 3 
+    if x[0]==97 or x[0]==75 or x[0]=='a' or x[0]=='D': d = 4
+    if x[0]==113 or x[0]=='q': d = -1
     #print('d=',d)
     return d
 
